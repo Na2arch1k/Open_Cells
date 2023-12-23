@@ -1,0 +1,165 @@
+body {
+  height: 958px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.hero-section::after {
+  background: #0c3632;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+.hero-section-title {
+  position: relative;
+  z-index: 1;
+  margin: 280px 0;
+}
+.header-container .header-nav {
+  text-align: right;
+}
+.header-container {
+  padding: 20px 0 20px 0;
+}
+.header-container-logo {
+  display: flex;
+}
+.header-img {
+  position: relative;
+  top: 40px;
+}
+.header-nav li {
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  color: #fff;
+}
+.header-nav a::after {
+  background: #17baaa;
+  bottom: -8px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.header-nav li:last-of-type {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0 15px;
+  color: white;
+  background-color: #dd3d53;
+}
+.header-nav li:last-of-type:hover {
+  background: #c9233a;
+  color: #fff;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+.nav-link::after {
+  background: #17baaa;
+  bottom: -8px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.25s ease;
+  width: 100%;
+}
+.nav-link:hover {
+  color: #17baaa;
+}
+.nav-link:hover::after {
+  transition: all 0.5s ease;
+  transform: scaleX(1);
+}
+
+.hero-section {
+  padding: 20px;
+  height: calc(100vh - 40px);
+  background-color: #17baaa;
+  background-image: url('https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.hero-section-text {
+  color: #17baaa;
+}
+.hero-section-primary {
+  font-size: 56px;
+  color: #fff;
+}
+.header-logo {
+}
+.hero-section-button {
+  background: #17baaa;
+  color: #fff;
+  align-items: center;
+  border: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 40px;
+  outline: none;
+  padding: 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+.hero-section-button:hover {
+  background: #129185;
+}
+.container {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
